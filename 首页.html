@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>光与夜之恋</title>
+    <link rel="stylesheet" type="text/css" href="光夜.css">
+</head>
+<body>
+    <div class="logo" style="text-align: center;">
+        <img src="./素材图/光与夜之恋.png" width="189px" height="66px">
+    </div>
+    <div class="K"></div>
+    <div class="菜单">
+        <ul class="nav">
+            <li class="list"><a href="首页.html" id="aa">首页</a></li>
+            <li class="list"><a href="人物介绍（萧逸）.html">人物介绍</a>
+                <ul class="列表">
+                    <li><a href="人物介绍（萧逸）.html">萧逸</a></li>
+                    <li><a href="陆沉.html">陆沉</a></li>
+                    <li><a href="齐司礼.html">齐司礼</a></li>
+                    <li><a href="查理苏.html">查理苏</a></li>
+                    <li><a href="夏鸣星.html">夏鸣星</a></li>
+                </ul></li>
+            <li class="list"><a href="最新活动.html">最新活动</a></li>
+            <li class="list"><a href="关于我们.html">关于我们</a></li>
+            <li class="list"><a href="帮助中心.html">帮助中心</a></li>
+        </ul>
+    </div>
+    <div class="lunbo">
+        <img id="lunbo_img" src="./轮播1.jpg"  width="1200px" height="600px">
+        <h1>游戏介绍</h1>
+        <div class="游戏">
+            <img src="./素材图/光夜.jpg" width="600px" height="350px" >
+        </div>
+        <div class="介绍">
+            <p>&nbsp;&nbsp;《光与夜之恋》是由北极光工作室打造的一款女性向高沉浸互动恋爱手游，汇聚国内外顶级CV、殿堂级作曲家、超一线画师及豪华编剧团队，倾力营造与众不同的真实恋爱氛围。多线剧情，命运抉择，为你带来全新的高沉浸恋爱互动体验。在游戏中，你会以设计师的身份，进入到一个陌生的城市，在这个城市中，会有五个不同身份的男性追求者。你需要面对一个个抉择，每一个抉择都会对未来的命运，有极大的改变。</p>
+        </div>
+        <div class="角色">
+            <h1>游戏角色</h1>
+            <table>
+                <tr>
+                    <td>
+                        <a href="人物介绍.html">
+                            &nbsp;&nbsp;&nbsp;&nbsp;姓名：萧逸(Osborn)</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;CV：阿杰&nbsp;、石川界人</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;职业：赛车手、赏金猎人</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;天赋：深蓝火焰</br>
+                        </a>
+                        <img src="./素材图/11/萧逸.jpg"/>
+                    </td>
+                    <td>
+                        <a href="人物介绍.html">
+                            &nbsp;&nbsp;&nbsp;&nbsp;姓名：陆沉(Evan)</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;CV：刘北辰&nbsp;、森川智之</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;职业：万甄集团CEO</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;天赋：幻惑之瞳</br>
+                        </a>
+                        <img src="./素材图/陆沉.jpg"/>
+                    </td>
+                    <td>
+                        <a href="人物介绍.html">
+                            &nbsp;&nbsp;&nbsp;&nbsp;姓名：齐司礼(Sariel)</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;CV：赵路&nbsp;、岸尾大辅</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;职业：顶级设计师</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;天赋：非凡再生</br>
+                        </a>
+                        <img src="./素材图/齐司礼.jpg"/>
+                    </td>
+                    <td>
+                        <a href="人物介绍.html">
+                            &nbsp;&nbsp;&nbsp;&nbsp;姓名：查理苏(Charlie)</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;CV：吴磊&nbsp;、细谷佳正</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;职业：烧伤整形科医生</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;天赋：真空</br>
+                        </a>
+                        <img src="./素材图/查理苏.jpg"/>
+                    </td>
+                    <td>
+                        <a href="人物介绍.html">
+                            &nbsp;&nbsp;&nbsp;&nbsp;姓名：夏鸣星(Jesse)</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;CV：谷江平&nbsp;、木村良平</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;职业：音乐剧演员</br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;天赋：通灵</br>
+                        </a>
+                        <img src="./素材图/夏鸣星.jpg"/>
+                    </td>
+                </tr>
+            </table>
+            <a href="人物介绍.html" id="more">查看更多</a>
+        </div>
+    </div>
+    <footer>
+		版权所有 © 光与夜之恋 未经许可 严禁复制
+	</footer>
+    <script>
+        var index = 1;
+        function lunbo(){
+            index ++ ;
+    
+            if(index > 3){
+                index = 1;
+            }
+    
+            var img = document.getElementById("lunbo_img");
+            img.src = "./轮播"+index+".jpg";
+        }
+        setInterval(lunbo,2500);
+    </script>
+</body>
+</html>
